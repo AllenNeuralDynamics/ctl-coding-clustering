@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctl-coding-clustering"
+version = "0.1.0"
+description = "CTL FNN coding score and clustering pipeline (Garrett 2026)"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "xarray",
+    "scipy",
+    "scikit-learn",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+umap = ["umap-learn"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ctl_coding_clustering*"]

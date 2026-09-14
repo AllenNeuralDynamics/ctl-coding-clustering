@@ -41,7 +41,7 @@ import numpy as np
 import pandas as pd
 import xarray as xr
 
-from cell_matching import find_glm_asset_dir
+from .cell_matching import find_glm_asset_dir
 
 FULL_MODEL = "Full"
 DROPOUT_MODELS = {
